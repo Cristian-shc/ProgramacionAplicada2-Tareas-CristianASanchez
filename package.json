@@ -1,0 +1,22 @@
+{
+  "name": "tareas-prisma",
+  "version": "1.0.0",
+  "description": "API RESTful de tareas con Express, Prisma y PostgreSQL",
+  "main": "index.js",
+  "type": "module",
+"scripts": {
+  "start": "node src/index.js",
+  "dev": "nodemon src/index.js",
+  "postinstall": "prisma skills sync || exit 0"
+},
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "prisma": "^7.10.0"
+  }
+}
